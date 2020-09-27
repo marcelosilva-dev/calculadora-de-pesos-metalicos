@@ -1,0 +1,188 @@
+unit Unit2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TForm_chapas = class(TForm)
+    btn_fechar: TButton;
+    espessura: TLabeledEdit;
+    largura: TLabeledEdit;
+    comprimento: TLabeledEdit;
+    quantidade: TLabeledEdit;
+    Label1: TLabel;
+    Rad_aluminio: TRadioButton;
+    Rad_aco: TRadioButton;
+    Rad_inox1: TRadioButton;
+    Rad_inox2: TRadioButton;
+    Rad_ferro: TRadioButton;
+    Label2: TLabel;
+    btn_calcular: TButton;
+    und: TMemo;
+    Label3: TLabel;
+    Label4: TLabel;
+    total: TMemo;
+    Button1: TButton;
+    procedure btn_fecharClick(Sender: TObject);
+    procedure espessuraChange(Sender: TObject);
+    procedure larguraChange(Sender: TObject);
+    procedure comprimentoChange(Sender: TObject);
+    procedure quantidadeChange(Sender: TObject);
+    procedure Rad_aluminioClick(Sender: TObject);
+    procedure Rad_acoClick(Sender: TObject);
+    procedure Rad_inox1Click(Sender: TObject);
+    procedure Rad_inox2Click(Sender: TObject);
+    procedure Rad_ferroClick(Sender: TObject);
+    procedure btn_calcularClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form_chapas: TForm_chapas;
+  parametro:array[1..4] of real;
+  tipo: integer;
+  peso_und,peso_total: real;
+implementation
+
+{$R *.dfm}
+
+procedure TForm_chapas.btn_calcularClick(Sender: TObject);
+var
+pesototal,pesound: real;
+pesoundint,pesototalint:integer;
+begin
+case tipo of
+  1 :
+  begin
+  pesototal:= parametro[1] * parametro[2] * parametro[3] * 2.73;
+  pesototal:= pesototal * parametro[4]/ 1000;
+  pesototalint:=round(pesototal);
+  pesound := pesototal / parametro[4]/ 1000;
+  pesoundint:=round(pesound);
+  und.Lines.Add(floattostr(pesound));
+  total.Lines.Add(floattostr(pesototal));
+  end;
+  2 :
+  begin
+  pesototal:= parametro[1] * parametro[2] * parametro[3] * 7.85;
+  pesototal:= pesototal * parametro[4]/ 1000;
+  pesototalint:=round(pesototal);
+  pesound := pesototal / parametro[4]/ 1000;
+  pesoundint:=round(pesound);
+  und.Lines.Add(floattostr(pesoundint));
+  total.Lines.Add(floattostr(pesototalint));
+  end;
+  3 :
+  begin
+  pesototal:= parametro[1] * parametro[2] * parametro[3] * 7.92;
+  pesototal:= pesototal * parametro[4]/ 1000;
+  pesototalint:=round(pesototal);
+  pesound := pesototal / parametro[4]/ 1000;
+  pesoundint:=round(pesound);
+  und.Lines.Add(floattostr(pesoundint));
+  total.Lines.Add(floattostr(pesototalint));
+  end;
+  4 :
+  begin
+  pesototal:= parametro[1] * parametro[2] * parametro[3] * 7.71;
+  pesototal:= pesototal * parametro[4] / 1000;
+  pesototalint:=round(pesototal);
+  pesound := pesototal / parametro[4]/ 1000;
+  pesoundint:=round(pesound);
+  und.Lines.Add(floattostr(pesoundint));
+  total.Lines.Add(floattostr(pesototalint));
+  end;
+  5 :
+  begin
+  pesototal:= parametro[1] * parametro[2] * parametro[3] * 7.86;
+  pesototal:= pesototal * parametro[4]/ 1000;
+  pesototalint:=round(pesototal);
+  pesound := pesototal / parametro[4]/ 1000;
+  pesoundint:=round(pesound);
+  und.Lines.Add(floattostr(pesoundint));
+  total.Lines.Add(floattostr(pesototalint));
+  end;
+    else showMessage('escolha uma categoria');
+    end;
+end;
+
+procedure TForm_chapas.btn_fecharClick(Sender: TObject);
+begin
+Form_chapas.close;
+und.clear;
+total.clear;
+end;
+
+procedure TForm_chapas.Button1Click(Sender: TObject);
+begin
+und.Clear;
+total.Clear;
+end;
+
+procedure TForm_chapas.comprimentoChange(Sender: TObject);
+begin
+parametro[3]:= strtofloat(comprimento.Text);
+end;
+
+procedure TForm_chapas.espessuraChange(Sender: TObject);
+begin
+parametro[1]:= strtofloat(espessura.Text);
+end;
+
+procedure TForm_chapas.larguraChange(Sender: TObject);
+begin
+parametro[2]:= strtofloat(largura.Text);
+end;
+
+procedure TForm_chapas.quantidadeChange(Sender: TObject);
+begin
+parametro[4]:= strtofloat(quantidade.Text);
+end;
+
+procedure TForm_chapas.Rad_acoClick(Sender: TObject);
+begin
+if Rad_aco.checked then
+  begin
+  tipo:= 2;
+  end;
+end;
+
+procedure TForm_chapas.Rad_aluminioClick(Sender: TObject);
+begin
+if Rad_aluminio.checked then
+  begin
+  tipo:= 1;
+  end;
+end;
+procedure TForm_chapas.Rad_ferroClick(Sender: TObject);
+begin
+if Rad_ferro.checked then
+  begin
+  tipo:= 5;
+  end;
+end;
+
+procedure TForm_chapas.Rad_inox1Click(Sender: TObject);
+begin
+if Rad_inox1.checked then
+  begin
+  tipo:= 3;
+  end;
+end;
+
+procedure TForm_chapas.Rad_inox2Click(Sender: TObject);
+begin
+if Rad_inox2.checked then
+  begin
+  tipo:= 4;
+  end;
+end;
+
+end.

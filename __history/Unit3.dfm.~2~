@@ -1,0 +1,144 @@
+object Form_tredondo: TForm_tredondo
+  Left = 0
+  Top = 0
+  Caption = 'Tubo Redondo'
+  ClientHeight = 231
+  ClientWidth = 505
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label_PARAM: TLabel
+    Left = 8
+    Top = 24
+    Width = 117
+    Height = 13
+    Caption = 'Parametros: (milimetros)'
+  end
+  object Label_PESOUND: TLabel
+    Left = 168
+    Top = 59
+    Width = 90
+    Height = 13
+    Caption = 'Peso por UND (KG)'
+  end
+  object TLabel
+    Left = 168
+    Top = 125
+    Width = 3
+    Height = 13
+  end
+  object Label_pesoTOT: TLabel
+    Left = 168
+    Top = 125
+    Width = 82
+    Height = 13
+    Caption = 'Peso TOTAL (KG)'
+  end
+  object btn_fechar: TButton
+    Left = 422
+    Top = 198
+    Width = 75
+    Height = 25
+    Caption = 'Fechar'
+    TabOrder = 0
+    OnClick = btn_fecharClick
+  end
+  object label_diamINT: TLabeledEdit
+    Left = 8
+    Top = 56
+    Width = 121
+    Height = 21
+    EditLabel.Width = 90
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Diametro Interno~'
+    TabOrder = 1
+    OnChange = label_diamINTChange
+  end
+  object label_diamTOTAL: TLabeledEdit
+    Left = 8
+    Top = 96
+    Width = 121
+    Height = 21
+    EditLabel.Width = 70
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Diametro Total'
+    TabOrder = 2
+    OnChange = label_diamTOTALChange
+  end
+  object Comprimento: TLabeledEdit
+    Left = 8
+    Top = 144
+    Width = 121
+    Height = 21
+    EditLabel.Width = 63
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Comprimento'
+    TabOrder = 3
+    OnChange = ComprimentoChange
+  end
+  object Quantidade: TLabeledEdit
+    Left = 8
+    Top = 184
+    Width = 121
+    Height = 21
+    EditLabel.Width = 56
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Quantidade'
+    TabOrder = 4
+    OnChange = QuantidadeChange
+  end
+  object Button1: TButton
+    Left = 168
+    Top = 24
+    Width = 75
+    Height = 25
+    Caption = 'CALCULAR'
+    TabOrder = 5
+    OnClick = Button1Click
+  end
+  object und: TMemo
+    Left = 168
+    Top = 78
+    Width = 145
+    Height = 41
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Lines.Strings = (
+      'und')
+    ParentFont = False
+    TabOrder = 6
+  end
+  object total: TMemo
+    Left = 168
+    Top = 144
+    Width = 145
+    Height = 41
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Lines.Strings = (
+      'total')
+    ParentFont = False
+    TabOrder = 7
+  end
+  object Button2: TButton
+    Left = 249
+    Top = 24
+    Width = 80
+    Height = 25
+    Caption = 'LIMPAR'
+    TabOrder = 8
+    OnClick = Button2Click
+  end
+end

@@ -1,0 +1,139 @@
+object Form_cantoneira: TForm_cantoneira
+  Left = 0
+  Top = 0
+  Caption = 'Cantoneira'
+  ClientHeight = 243
+  ClientWidth = 505
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 24
+    Top = 24
+    Width = 112
+    Height = 13
+    Alignment = taCenter
+    Caption = 'Parametros: (milimetro)'
+  end
+  object Label2: TLabel
+    Left = 183
+    Top = 85
+    Width = 90
+    Height = 13
+    Caption = 'Peso por UND (KG)'
+  end
+  object Label3: TLabel
+    Left = 183
+    Top = 155
+    Width = 82
+    Height = 13
+    Caption = 'Peso TOTAL (KG)'
+  end
+  object btn_fechar: TButton
+    Left = 422
+    Top = 192
+    Width = 75
+    Height = 25
+    Caption = 'Fechar'
+    TabOrder = 0
+    OnClick = btn_fecharClick
+  end
+  object Largura: TLabeledEdit
+    Left = 24
+    Top = 56
+    Width = 121
+    Height = 21
+    EditLabel.Width = 37
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Largura'
+    TabOrder = 1
+    OnChange = LarguraChange
+  end
+  object Espessura: TLabeledEdit
+    Left = 24
+    Top = 96
+    Width = 121
+    Height = 21
+    EditLabel.Width = 49
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Espessura'
+    TabOrder = 2
+    OnChange = EspessuraChange
+  end
+  object Comprimento: TLabeledEdit
+    Left = 24
+    Top = 136
+    Width = 121
+    Height = 21
+    EditLabel.Width = 63
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Comprimento'
+    TabOrder = 3
+    OnChange = ComprimentoChange
+  end
+  object Quantidade: TLabeledEdit
+    Left = 24
+    Top = 176
+    Width = 121
+    Height = 21
+    EditLabel.Width = 56
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Quantidade'
+    TabOrder = 4
+    OnChange = QuantidadeChange
+  end
+  object Button1: TButton
+    Left = 183
+    Top = 54
+    Width = 75
+    Height = 25
+    Caption = 'CALCULAR'
+    TabOrder = 5
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 272
+    Top = 54
+    Width = 75
+    Height = 25
+    Caption = 'LIMPAR'
+    TabOrder = 6
+    OnClick = Button2Click
+  end
+  object und: TMemo
+    Left = 183
+    Top = 104
+    Width = 179
+    Height = 45
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Lines.Strings = (
+      'und')
+    ParentFont = False
+    TabOrder = 7
+  end
+  object total: TMemo
+    Left = 183
+    Top = 174
+    Width = 179
+    Height = 43
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Lines.Strings = (
+      'total')
+    ParentFont = False
+    TabOrder = 8
+  end
+end

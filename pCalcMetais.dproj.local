@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/11/15 12:38:02.000.544,=C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/11/15 19:38:52.000.366,=C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/11/15 19:40:15.000.693,C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\uHome.pas</Transaction>
+    <Transaction>2018/11/15 19:40:15.000.693,C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\uHome.dfm</Transaction>
+    <Transaction>2018/11/15 19:41:45.000.780,C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\calc metais\pCalcMetais.dproj</Transaction>
+    <Transaction>2018/11/15 19:42:39.000.096,=C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\calc metais\Unit2.pas</Transaction>
+    <Transaction>2018/11/15 19:55:09.000.939,=C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\calc metais\Unit3.pas</Transaction>
+    <Transaction>2018/11/15 19:55:36.000.275,=C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\calc metais\Unit4.pas</Transaction>
+    <Transaction>2018/11/15 19:55:56.000.801,=C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\calc metais\Unit5.pas</Transaction>
+    <Transaction>2018/11/15 19:56:18.000.945,=C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\calc metais\Unit6.pas</Transaction>
+    <Transaction>2018/11/15 19:56:40.000.652,=C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\calc metais\Unit7.pas</Transaction>
+    <Transaction>2018/11/16 00:29:18.000.781,=C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\calc metais\uHome.pas</Transaction>
+    <Transaction>2018/11/16 00:35:25.000.711,=C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\calc metais\Unit4.pas</Transaction>
+    <Transaction>2018/11/16 00:35:25.000.790,=C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\calc metais\Unit5.pas</Transaction>
+    <Transaction>2018/11/16 00:35:25.000.632,=C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\calc metais\Unit3.pas</Transaction>
+    <Transaction>2018/11/16 00:35:25.000.550,=C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\calc metais\Unit2.pas</Transaction>
+    <Transaction>2018/11/16 00:35:25.000.960,=C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\calc metais\Unit7.pas</Transaction>
+    <Transaction>2018/11/16 00:35:25.000.876,=C:\Users\marce\OneDrive\Documentos\Embarcadero\Studio\Projects\calc metais\Unit6.pas</Transaction>
+  </Transactions>
+</BorlandProject>
